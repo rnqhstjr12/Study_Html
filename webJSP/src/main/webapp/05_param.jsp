@@ -15,5 +15,12 @@
 	주 &nbsp; 소 : 	<input type="text" name="from"><br>
 	<input type="submit" value="전송" onclick="return check()">
 </form>
+<form method="post" action="ParamServlet" name="frm">
+	아이디 :			<input type="text" name="id"><br>
+	나 &nbsp; 이 : 	<input type="text" name="age"><br>
+	이 &nbsp; 름 :	<input type="text" name="name"><br>
+	주 &nbsp; 소 : 	<input type="text" name="from"><br>
+	<input type="submit" value="전송" onclick="return check()">
+</form>
 </body>
 </html>
