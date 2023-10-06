@@ -21,22 +21,22 @@ public class LoginSet extends HttpServlet {
 		response.setContentType("text/html; charset=UTF-8");
 		PrintWriter out = response.getWriter();
 		String name = request.getParameter("name");
-		String rNum = request.getParameter("rNum1") +
-				"-" + request.getParameter("rNum2");
+		String rNum = request.getParameter("jumin_1") +
+				"-" + request.getParameter("jumin_2");
 		String id = request.getParameter("id");
 		String pwd = request.getParameter("pwd");
 		String email = request.getParameter("email");
-		if (request.getParameter("email_dns").trim() == "") {
+		if (request.getParameter("hdEmail_dns").trim() == "") {
 			email += "@" + request.getParameter("emailaddr");
 		} else {
-			email += "@" + request.getParameter("email_dns");
+			email += "@" + request.getParameter("hdEmail_dns");
 		}
-		String zipCode = request.getParameter("zipCode");
+		String zipCode = request.getParameter("zip");
 		String addr = request.getParameter("addr1") +
 				"-" + request.getParameter("addr2");
 		String phone = request.getParameter("phone");
 		String job = request.getParameter("job");
-		String coffs[] = request.getParameterValues("coff");
+		String coffs[] = request.getParameterValues("interest");
 		
 		out.print("<html><body>");
 		out.println("이름 : ");
