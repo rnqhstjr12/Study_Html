@@ -7,8 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h3>프론트 페이지</h3>
-	<a href="11_sub.jsp">서브 페이지로 이동하기</a><br> 
-	<%@ include file="11_footer.jsp" %>
+<%= request.getParameter("name") %>님 안녕하세요!
+<br>
+저희 홈페이지에 방문해 주셔서 감사합니다.<br>
+즐거운 시간 되세요....<br>
 </body>
 </html>
