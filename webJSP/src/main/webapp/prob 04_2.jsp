@@ -25,4 +25,4 @@ for(int i = 0; i < n; i++) {
 out.print(n + " = " + sum(n));
 %>
 </body>
-</html>
+</html>   
