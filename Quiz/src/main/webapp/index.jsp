@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a href = "login.do">로그인 페이지로 이동</a>
+<% RequestDispatcher dispatcher = request.getRequestDispatcher("member/login.jsp");
+dispatcher.forward(request, response); %>
 </body>
 </html>

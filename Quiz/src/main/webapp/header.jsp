@@ -30,7 +30,7 @@
          <span style="color:red">(로그인 후 사용 가능)</span></td>
       </tr>   
    </c:if>
-   <c:if test="${!empty loginUser }">
+   <c:if test="${!empty loginUser}">
       <tr>
          <td> ${loginUser.name}님 반갑습니다.</td>
          <td> 레벨 : ${loginUser.lv}</td>
