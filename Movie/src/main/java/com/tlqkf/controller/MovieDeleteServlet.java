@@ -1,7 +1,6 @@
 package com.tlqkf.controller;
 
 import java.io.IOException;
-import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -11,22 +10,24 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.tlqkf.dao.MovieDAO;
-import com.tlqkf.dto.MovieVO;
 
 /**
- * Servlet implementation class MovieListServlet
+ * Servlet implementation class MovieDeleteServlet
  */
-@WebServlet("/movieList.do")
-public class MovieListServlet extends HttpServlet {
+@WebServlet("/movieDelete.do")
+public class MovieDeleteServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		MovieDAO mdao = MovieDAO.Inst();
-		List<MovieVO> movieList = mdao.selectAllMovies();
-		request.setAttribute("movieList", movieList);
-		RequestDispatcher dispatcher = request.getRequestDispatcher("movie/movieList.jsp");
+		String code = request.getParameter("code");
+		
+		request.setAttribute("movie", MovieDAO.Inst().selectMovieByCode(code));
+		RequestDispatcher dispatcher = request.getRequestDispatcher("movie/movieDelete.jsp");
 		dispatcher.forward(request, response);
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doGet(request, response);
+		String code = request.getParameter("code");
+		
+		MovieDAO.Inst().deleteMovie(code);
+		response.sendRedirect("movieList.do");
 	}
 }
