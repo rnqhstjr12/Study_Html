@@ -111,7 +111,10 @@
 				<Context docBase="D:\webWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Quiz" path="/Quiz" reloadable="true" source="org.eclipse.jst.jee.server:Quiz">
 					<Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxIdle="30" maxTotal="100" maxWaitMillis="10000" name="jdbc/TestDB" password="ezen1234" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/nscott" username="root"/>
 				</Context>
-			</Host>
+				<Context docBase="D:\webWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\exam" path="/exam" reloadable="true" source="org.eclipse.jst.jee.server:exam">
+					<Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxIdle="30" maxTotal="100" maxWaitMillis="10000" name="jdbc/TestDB" password="ezen1234" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/nscott" username="root"/>
+				</Context>
+				</Host>
 		</Engine>
 	</Service>
 </Server>
