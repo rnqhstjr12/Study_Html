@@ -11,11 +11,20 @@
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
     <fullyQualifiedTypeName name="com.magic.dao.EmployeesDAO"/>
-    <fullyQualifiedTypeName name="com.mysql.cj.xdevapi.Statement"/>
     <fullyQualifiedTypeName name="com.saeyan.dto.ProductVO"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="com.saeyan.dao.ProductDAO"/>
     <fullyQualifiedTypeName name="util.DBManager"/>
     <fullyQualifiedTypeName name="com.tlqkf.dao.MovieDAO"/>
+    <fullyQualifiedTypeName name="java.sql.Timestamp"/>
+    <fullyQualifiedTypeName name="javax.naming.Context"/>
+    <fullyQualifiedTypeName name="javax.sql.DataSource"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.xdevapi.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="util.Util"/>
+    <fullyQualifiedTypeName name="com.saeyan.controller.Action"/>
+    <fullyQualifiedTypeName name="com.saeyan.controller.action.Action"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="com.saeyan.dao.BoardDAO"/>
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 </qualifiedTypeNameHistroy>
