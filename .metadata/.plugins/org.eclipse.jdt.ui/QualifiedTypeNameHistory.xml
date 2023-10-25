@@ -25,6 +25,7 @@
     <fullyQualifiedTypeName name="com.saeyan.controller.Action"/>
     <fullyQualifiedTypeName name="com.saeyan.controller.action.Action"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="com.saeyan.dao.BoardDAO"/>
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="com.saeyan.dto.BoardVO"/>
+    <fullyQualifiedTypeName name="com.saeyan.dao.BoardDAO"/>
 </qualifiedTypeNameHistroy>

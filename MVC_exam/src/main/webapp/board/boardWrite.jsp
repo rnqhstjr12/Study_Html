@@ -13,7 +13,7 @@
 <div id = "wrap" align = "center">
 <h1>게시글 등록</h1>
 <form name = "frm" method = "post" action = "BoardServlet">
-	<inpurt type = "hidden" name = "command" value = "board_write">
+	<input type = "hidden" name = "command" value = "board_write">
 	<table>
 		<tr>
 			<th>작성자</th>

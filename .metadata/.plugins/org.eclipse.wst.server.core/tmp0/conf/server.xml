@@ -118,6 +118,9 @@
 				<Context docBase="D:\webWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\MVC_exam" path="/MVC_exam" reloadable="true" source="org.eclipse.jst.jee.server:MVC_exam">
 					<Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxIdle="30" maxTotal="100" maxWaitMillis="10000" name="jdbc/TestDB" password="ezen1234" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/nscott" username="root"/>
 				</Context>
+				<Context docBase="D:\webWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\MVC_Prob" path="/MVC_Prob" reloadable="true" source="org.eclipse.jst.jee.server:MVC_Prob">
+					<Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxIdle="30" maxTotal="100" maxWaitMillis="10000" name="jdbc/TestDB" password="ezen1234" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/nscott" username="root"/>
+				</Context>
 				</Host>
 		</Engine>
 	</Service>

@@ -49,17 +49,18 @@ public class BoardDAO {
 		return list;
 	}
 	public void insertBoard(BoardVO bvo) {
-		String sql = "INSERT INTO BOARD VALUES"
-				+ "(NULL, ?, ?, ?, ?, ?)";
+//		String sql = "INSERT INTO BOARD VALUES"
+//				+ "(NULL, ?, ?, ?, ?, ?)";
+		String sql = "INSERT INTO BOARD(NUM, NAME, EMAIL, PW, TITLE, CONTENT) VALUES(NULL, ?, ?, ?, ?, ?)"; 
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		try {
 			conn = Util.getConnection();
 			pstmt = conn.prepareStatement(sql);
 			
-			pstmt.setString(1, bvo.getName());
-			pstmt.setString(2, bvo.getEmail());
-			pstmt.setString(3, bvo.getPw());
+			pstmt.setString(1, bvo.getPw());
+			pstmt.setString(2, bvo.getName());
+			pstmt.setString(3, bvo.getEmail());
 			pstmt.setString(4, bvo.getTitle());
 			pstmt.setString(5, bvo.getContent());
 			pstmt.executeUpdate();
@@ -104,9 +105,9 @@ public class BoardDAO {
 				bvo = new BoardVO();
 				
 				bvo.setNum(rs.getInt("NUM"));
+				bvo.setPw(rs.getString("PW"));
 				bvo.setName(rs.getString("NAME"));
 				bvo.setEmail(rs.getString("EMAIL"));
-				bvo.setPw(rs.getString("PW"));
 				bvo.setTitle(rs.getString("TITLE"));
 				bvo.setContent(rs.getString("CONTENT"));
 				bvo.setReadcnt(rs.getInt("READCNT"));

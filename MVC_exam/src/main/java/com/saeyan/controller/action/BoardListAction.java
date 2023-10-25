@@ -15,8 +15,7 @@ import com.saeyan.dto.BoardVO;
 public class BoardListAction implements Action {
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String url = "/board/boardList.jsp";
-		BoardDAO bdao = BoardDAO.Inst();
-		List<BoardVO> boardList = bdao.boardAll();
+		List<BoardVO> boardList = BoardDAO.Inst().boardAll();
 		request.setAttribute("boardList", boardList);
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(url);
